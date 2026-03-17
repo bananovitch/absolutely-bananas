@@ -22,13 +22,19 @@ title: Absolutely bananas
 email: piotr.michal.romanowski@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
     Strona domowa Piotra Romanowskiego z jego wszystkimi dziwnymi pomysłami, zdjęciami i nagraniami. 
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://absolutelybananas.pl" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:
   - jekyll-feed
 
+
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
