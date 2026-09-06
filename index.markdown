@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-# OH hi
+# Absolutely Bananas
 
-To jest początek mojej nowej strony internetowej.
+Strona domowa Piotra Romanowskiego. Muzyka, zdjęcia, czasem trochę pisaniny. 
