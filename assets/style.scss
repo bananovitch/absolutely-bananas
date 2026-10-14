@@ -1,18 +1,27 @@
 ---
 ---
+html {
+    font-size: 62.5%;
+}
 body {
-    font-family: sans-serif;
+    // Layout
     min-height: 100vh;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    // Fonts
+    font-family: sans-serif;
+    line-height: 1.25;
+    font-size: 1.8rem;
 }
 
 header {
-    min-height: 50p;
+    min-height: 50px;
     ul {
+        padding-left: 0;
         li {
             display: inline-block;
+            margin-left: 2rem;
         }
     }
 }
@@ -23,7 +32,10 @@ footer {
 
 .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 img {
