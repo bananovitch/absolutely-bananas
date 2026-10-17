@@ -1,11 +1,17 @@
 ---
 ---
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 body {
     // Layout
-    min-height: 100vh;
+    min-height: 100%;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -31,11 +37,17 @@ footer {
 }
 
 .container {
+    display: block;
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+ul.post-list {
+    li {
+        list-style: none;
+    }
 }
 
 img {
