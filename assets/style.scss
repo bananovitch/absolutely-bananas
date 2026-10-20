@@ -1,5 +1,12 @@
 ---
 ---
+@import 'reset';
+
+@font-face {
+    font-family: Zaklad;
+    src: url(Zaklad-Regular.woff);
+}
+
 *,
 *::before,
 *::after {
@@ -17,17 +24,39 @@ body {
     grid-template-rows: auto 1fr auto;
     // Fonts
     font-family: sans-serif;
-    line-height: 1.25;
+    line-height: 1.4;
     font-size: 1.8rem;
+    color: #444;
 }
+
+h1 {
+    font-size:8.5rem;
+    font-family:'Zaklad', sans-serif;
+    line-height: 1;
+}
+h2 {
+    font-size:5rem;
+}
+h3 {
+    font-size:3.5rem;
+}
+
+a,
+a:hover,
+a:visited {
+    color:#444;
+    text-decoration: none;
+}
+
 
 header {
     min-height: 50px;
+    padding:2rem;
     ul {
         padding-left: 0;
         li {
             display: inline-block;
-            margin-left: 2rem;
+            margin-right: 2rem;
         }
     }
 }
@@ -42,6 +71,18 @@ footer {
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.jumbotron {
+    height: 20rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D38312;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #EEEEEE;
 }
 
 ul.post-list {
