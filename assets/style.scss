@@ -7,6 +7,13 @@
     src: url(Zaklad-Regular.woff);
 }
 
+//variables
+$text-color: #444;
+$bright-text-color: #EEEEEE;
+$background:#EEEEEE;
+$link-color: #5B3FD9;
+$link-hover-color: #A83279;
+
 *,
 *::before,
 *::after {
@@ -23,10 +30,11 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     // Fonts
-    font-family: sans-serif;
+    font-family: "Cantarell", sans-serif;
     line-height: 1.4;
     font-size: 1.8rem;
-    color: #444;
+    color: $text-color;
+    background-color: $background;
 }
 
 h1 {
@@ -41,11 +49,20 @@ h3 {
     font-size:3.5rem;
 }
 
-a,
-a:hover,
-a:visited {
-    color:#444;
-    text-decoration: none;
+p {
+    margin-bottom: 2rem;
+}
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration-thickness: 2px;
+  }
 }
 
 
@@ -74,7 +91,7 @@ footer {
 }
 
 .jumbotron {
-    height: 20rem;
+    height: 30rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -82,7 +99,8 @@ footer {
     background: #D38312;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #EEEEEE;
+    color: $bright-text-color;
+    margin-bottom: 4rem;;
 }
 
 ul.post-list {
