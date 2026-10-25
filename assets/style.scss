@@ -65,6 +65,11 @@ a {
   }
 }
 
+@media screen and (max-width: 48rem) {
+    h1 {
+        font-size: 4rem;
+    }
+}
 
 header {
     min-height: 50px;
@@ -88,6 +93,7 @@ footer {
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    width: 100%;
 }
 
 .jumbotron {
@@ -100,7 +106,7 @@ footer {
     background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: $bright-text-color;
-    margin-bottom: 4rem;;
+    margin-bottom: 4rem;
 }
 
 ul.post-list {
